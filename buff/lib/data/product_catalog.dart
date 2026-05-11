@@ -4,6 +4,9 @@ abstract final class ProductCatalog {
   static const String tagline = 'Hear Everything. Feel Nothing.';
   static const int priceNgn = 249900;
 
+  /// Optional list price for urgency (shown struck-through when higher than [priceNgn]).
+  static const int compareAtPriceNgn = 299900;
+
   static const List<String> carouselImageUrls = [
     'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=1200&q=80',
     'https://images.unsplash.com/photo-1484704849700-f032a568e944?w=1200&q=80',
@@ -27,7 +30,7 @@ abstract final class ProductCatalog {
   static const List<ProductReview> reviews = [
     ProductReview(
       stars: 5,
-      quote: 'Bass is insane — clean, not muddy.',
+      quote: 'Bass is insane clean, not muddy.',
       author: 'Tolu · Lagos',
     ),
     ProductReview(

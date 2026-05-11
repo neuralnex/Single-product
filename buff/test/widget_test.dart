@@ -13,6 +13,6 @@ void main() {
     );
     await tester.pumpAndSettle();
     expect(find.text(ProductCatalog.tagline), findsOneWidget);
-    expect(find.text('Buy now'), findsOneWidget);
+    expect(find.text('Shop now'), findsOneWidget);
   });
 }

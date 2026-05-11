@@ -58,3 +58,9 @@ abstract final class AppTheme {
     );
   }
 }
+
+/// Amber conversion palette used on the landing screen primary CTAs.
+abstract final class LandingPalette {
+  static const Color cta = Color(0xFFF09933);
+  static const Color ctaForeground = Color(0xFF14110D);
+}

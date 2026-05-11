@@ -1,17 +1,23 @@
-# buff
+# buff — Flutter storefront
 
-A new Flutter project.
+Single-product (headphone DTC) Flutter app: landing, product details, cart, checkout, success, and order tracking.
 
-## Getting Started
+## Run
 
-This project is a starting point for a Flutter application.
+```bash
+flutter pub get
+flutter run
+```
 
-A few resources to get you started if this is your first Flutter project:
+## Docs
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+Backend features the app expects (newsletter, payments, orders, etc.) are described in the repo root: [**../docs/BACKEND.md**](../docs/BACKEND.md).
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Structure (high level)
+
+- `lib/screens/` — UI flows and routing targets  
+- `lib/data/product_catalog.dart` — static SKU, reviews, assets URLs  
+- `lib/widgets/newsletter_signup_card.dart` — newsletter capture (awaits API)  
+- `lib/providers/` — cart state (Riverpod)
+
+For generic Flutter help, see [Flutter documentation](https://docs.flutter.dev/).
